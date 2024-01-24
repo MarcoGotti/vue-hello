@@ -1,3 +1,18 @@
+p {
+  margin: 0;
+}
+
+button {
+  margin: 1rem 0;
+}
+
+input {
+  margin-top: 1rem;
+}
+
+/* ********************************* 
+Default Vite*/
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

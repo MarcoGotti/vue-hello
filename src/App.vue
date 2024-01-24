@@ -10,6 +10,8 @@
         lastname:'',
 
         count: 0,
+
+        image: 'https://picsum.photos/300/300'
       }
     },
     methods: {
@@ -41,6 +43,11 @@
 
     <button @click="count++">Click</button>
     {{ count }}
+
+    <div>
+      <img :src="image" alt="Lorem Picture">
+    </div>
+
   </div>  
 </template>
 
