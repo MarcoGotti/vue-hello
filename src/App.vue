@@ -1,30 +1,48 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+  export default {
+    name: 'App',
+    data() {
+      return{
+        message: 'CusoMat',
+        content: 'lorem ipsum dolor',
+
+        name:'',
+        lastname:'',
+
+        count: 0,
+      }
+    },
+    methods: {
+      firstFunct(){
+        console.log('Cliccato');
+        this.secondFunct()
+      },
+      secondFunct(){
+        console.log('secondFunct');
+      }
+    }
+  }
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <h1>Hello {{ message }}</h1>
+    <p>{{ content }}</p> 
+    
+    <label for="name">first name</label>
+    <input type="text" v-model="name">
+
+    <label for="name"> lastname</label>
+    <input type="text" v-model="lastname">
+
+    <p>Buongiorno {{ name + ' ' + lastname }}</p>
+    <p>Buongiorno {{ name }} {{ lastname }}</p>
+    <p>{{'Buongiorno ' + name }} {{ lastname }}</p>
+
+    <button @click="count++">Click</button>
+    {{ count }}
+  </div>  
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<style>
 </style>
