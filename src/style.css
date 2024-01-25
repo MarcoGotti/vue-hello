@@ -10,6 +10,10 @@ input {
   margin-top: 1rem;
 }
 
+img {
+  margin-bottom: 1rem;
+}
+
 /* ********************************* 
 Default Vite*/
 

@@ -3,7 +3,7 @@
     name: 'App',
     data() {
       return{
-        message: 'CusoMat',
+        message: 'Cuso',
         content: 'lorem ipsum dolor',
 
         name:'',
@@ -46,6 +46,11 @@
 
     <div>
       <img :src="image" alt="Lorem Picture">
+    </div>
+
+    <div>
+      <img src="/vite.svg" alt="Lorem Picture" style="margin-right: 2rem;">
+      <img src="./assets/vue.svg" alt="Lorem Picture">
     </div>
 
   </div>  
